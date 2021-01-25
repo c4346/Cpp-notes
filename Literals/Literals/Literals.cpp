@@ -15,14 +15,14 @@ int main()
 		FLOATS: BASE IS DOUBLE
 				f = float
 				l = long double
-		capitalization  *doesn't* matter
+		capitalization  doesn't matter, but looks bad
 	*/
 	
 	double sci_not{ 4.432e-3 }; //scientific notation goes uses e as exponent
 	int octal{ 010 }; //0 prefix for octal
 	int hex{ 0xC }; //0x for hex
-	int bin_pre14{ 0x10 }; //pre 14 uses hex to create a bin value
-	int bin_14{ 0b0110'1011 }; //post 14 uses 0b, can't print though
+	int bin_pre14{ 0x10 }; //pre 14 uses hex to create a bin value, beacause 0x10 is = to 0b01
+	int bin_14{ 0b0110'1011 }; //post 14 uses 0b, can't print though; you can use comma to make it readable
 	std::bitset<8> bin_bitset{ 0b0101'1001 }; // store binary value as bitset variable; how many bits you want goes in <>, can be printed, still needs 0b prefix
 	
 	std::cout << sci_not << "\n";
